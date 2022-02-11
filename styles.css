@@ -81,6 +81,7 @@ h1 {
 .section {
   padding: 5rem 0;
 }
+
 #header {
   border-bottom: 1px solid #e4e4e4;
   margin-bottom: 2rem;
@@ -94,13 +95,11 @@ h1 {
   background-color: var(--body-color);
 }
 
-nav {
-  height: var(--header-height);
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+main {
+  margin-top: calc(var(--header-height) + 2rem);
 }
+
+/* ===== LOGO ===================================== */
 
 .logo {
   font: 700 1.31rem "Poppins", sans-serif;
@@ -111,8 +110,13 @@ nav {
   color: var(--base-color);
 }
 
-main {
-  margin-top: var(--header-height);
+/* ===== NAVIGATION =============================== */
+nav {
+  height: var(--header-height);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 /* ===== HOME ================================== */
