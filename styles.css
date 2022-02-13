@@ -36,6 +36,7 @@ img {
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font: 400 1rem "DM Sans", sans-serif;
   color: var(--text-color);
@@ -180,6 +181,12 @@ nav ul li a:hover::after {
 nav .menu {
   opacity: 0;
   visibility: hidden;
+  top: -20rem;
+  transition: 0.2s;
+}
+
+nav .menu ul {
+  display: none;
 }
 
 nav.show .menu {
@@ -195,11 +202,13 @@ nav.show .menu {
   position: fixed;
   top: 0;
   left: 0;
-}
 
-nav.show .menu {
   display: grid;
   place-content: center;
+}
+
+nav.show .menu ul {
+  display: grid;
 }
 
 /* mostrar o menu */
