@@ -8,11 +8,25 @@ for (const element of toogle) {
   });
 }
 
-/* quando clicar em um item do menu esconder o menu */
+/* quando clicar em um item do menu, esconder o menu */
 const links = document.querySelectorAll("nav ul li a");
 
 for (const link of links) {
-  link.addEventListener("click", () => {
-    nav.classList.toggle("show");
+  link.addEventListener("click", function () {
+    nav.classList.remove("show");
   });
 }
+
+/* mudar o header da pagina quando der scroll */
+const header = document.querySelector("#header");
+const navHeight = header.offsetHeight;
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= navHeight) {
+    // se o scrool passar da altura do header
+    header.classList.add("scroll");
+  } else {
+    //se o scroll for menor que altura do header
+    header.classList.remove("scroll");
+  }
+});
