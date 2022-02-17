@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <!-- icones -->
     <link rel="stylesheet" href="assets/fonts/style.css" <!-- Styles -- />
     <link rel="stylesheet" href="/styles.css" />
@@ -14,6 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Poppins:wght@400;500;700&family=Press+Start+2P&family=Roboto+Condensed:wght@300;400&display=swap"
       rel="stylesheet"
     />
+
     <title>Salão de Beleza</title>
   </head>
   <body>
@@ -139,68 +145,73 @@
         </div>
       </section>
 
+      <div class="divider-1"></div>
+
       <!-- TESTIMONIALS -->
       <section class="section" id="testimonials">
-        <div class="container grid">
+        <div class="container">
           <header>
             <h2 class="title">Depoimentos de quem já passou por aqui</h2>
           </header>
-          <div class="testimonials">
-            <div class="testimonial">
-            <blockquote>
-              <p>
-                <span>&ldquo;</span>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Adipisci a natus sint laboriosam ad maiores ab accusamus commodi
-                pariatur
-              </p>
-              <cite>
-                <img src="assets/fotos/89.jpg" alt="">
-                Vanessa Souza
-              </cite>
-            </blockquote>
-            </div>
-
-            <div class="testimonials">
-              <div class="testimonial">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Adipisci a natus sint laboriosam ad maiores ab accusamus commodi
-                  pariatur
-                </p>
-                <cite>
-                  <img src="assets/fotos/27.jpg" alt="">
-                  Franciele Venega
-                </cite>
-              </blockquote>
-              </div>
-
-              <div class="testimonials">
-                <div class="testimonial">
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
                 <blockquote>
                   <p>
                     <span>&ldquo;</span>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Adipisci a natus sint laboriosam ad maiores ab accusamus commodi
-                    pariatur
+                    Adipisci a natus sint laboriosam ad maiores ab accusamus
+                    commodi pariatur
                   </p>
                   <cite>
-                    <img src="assets/fotos/36.jpg" alt="">
+                    <img src="assets/fotos/89.jpg" alt="" />
+                    Vanessa Souza
+                  </cite>
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Adipisci a natus sint laboriosam ad maiores ab accusamus
+                    commodi pariatur
+                  </p>
+                  <cite>
+                    <img src="assets/fotos/27.jpg" alt="" />
+                    Franciele Venega
+                  </cite>
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Adipisci a natus sint laboriosam ad maiores ab accusamus
+                    commodi pariatur
+                  </p>
+                  <cite>
+                    <img src="assets/fotos/36.jpg" alt="" />
                     Valeska Fabris
                   </cite>
                 </blockquote>
-                </div>
+              </div>
+            </div>
 
-            <div class="testimonial"></div>
-            <div class="testimonial"></div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
     </main>
 
     <footer></footer>
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- main.js -->
     <script src="main.js"></script>
   </body>
 </html>
