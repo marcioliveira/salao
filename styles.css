@@ -553,6 +553,10 @@ footer .social a:hover {
     display: none;
   }
 
+  main {
+    margin-top: var(--header-height);
+  }
+
   /* home */
   #home .container {
     grid-auto-flow: column;
@@ -570,8 +574,11 @@ footer .social a:hover {
     text-align: left;
   }
 
-  main {
-    margin-top: var(--header-height);
+  /* about */
+  #about .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
   }
 }
 /* large devices: 1023px > */
