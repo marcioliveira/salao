@@ -171,7 +171,8 @@ nav ul li a {
   position: relative;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
   color: var(--base-color);
 }
 
@@ -188,7 +189,8 @@ nav ul li a::after {
   transition: width 0.2s;
 }
 
-nav ul li a:hover::after {
+nav ul li a:hover::after,
+nav ul li a.active::after {
   width: 100%;
 }
 
@@ -271,7 +273,7 @@ nav.show div.icon-close {
   background: var(--base-color-second);
   position: absolute;
   top: -16.8%;
-  left: 3.7%;
+  left: 16.7%;
   z-index: 0;
 }
 
@@ -555,6 +557,12 @@ footer .social a:hover {
 
   nav .menu li a.title {
     font: 400 1rem var(--body-font);
+    -webkit-font-smoothing: antialiased; /* afina as letras(depende do navegador) */
+  }
+
+  nav .menu li a.title.active {
+    font-weight: bold;
+    -webkit-font-smoothing: auto; /* afina as letras(depende do navegador) */
   }
 
   nav .icon-menu {
@@ -613,6 +621,20 @@ footer .social a:hover {
 
   #contact .text {
     max-width: 25rem;
+  }
+
+  footer.section {
+    padding: 3.75rem;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .logo {
+    font-size: 2.25rem;
   }
 }
 
