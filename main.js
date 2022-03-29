@@ -126,3 +126,21 @@ const Modal = {
     document.querySelector(".modal-overlay").classList.remove("active");
   },
 };
+
+// Eu preciso salvar os dados do
+// cliente, serviço, horario e cabelereiro
+// que realizará o serviço
+const Schedule = {
+  addSchedule() {
+    console.log("agendado");
+  },
+};
+
+const schedules = [
+  {
+    id: 1,
+    date: "20/03/2022",
+  },
+  {},
+  {},
+];
